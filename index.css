@@ -1,0 +1,124 @@
+
+#card{
+    width: 30%;
+    height: 50%;
+    align-self: center;
+   border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+html, body {
+    height: 100%;
+    align-items: center;
+  }
+  
+  #mainbody{
+      display: flex;
+      justify-content: center;
+    height: 100%;
+    
+  }
+  @media (min-width:1024px){
+  body{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #livecounter{
+    align-self: flex-end;
+    margin-top: 40%;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+       position: absolute;
+       background-color: white;
+       padding: 5px 5px 5px;
+       
+     }
+}
+  @media (max-width:780px)  { 
+    #card{
+      width: 80%;
+    height: 40%;
+    align-self: center;
+   
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+    flex-direction: column;
+    position: relative;
+    
+    }
+    body{
+      
+     
+      background-color: #3623B7;
+    }
+    #livecounter{
+      position: fixed;
+     bottom: -1px;
+     right: -1px;
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 10px;
+         position: absolute;
+         background-color: #3623B7;
+         padding: 5px 5px 5px;
+        color: white; 
+       }
+       #songdownload{
+         border-radius: 20px;
+         height: 30px;
+         color: white;
+         border-width: 0px;
+         background-color: rgb(55, 172, 166);
+        
+         display: flex;
+         align-self: center;
+       }
+       #titleofsong{
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         font-size: smaller;
+       }
+       #details{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         margin-bottom: 10px;
+         margin-top: 10px;
+       }
+   
+   }
+   #downloadbutton{
+     border-width: 0px;
+     border-radius: 25px;
+     width: 30%;
+     height: 40px;
+     background-color: tomato;
+     color: white;
+    
+   }
+   #downloadbutton:hover{
+     background-color: violet;
+
+   }
+   #downloadbutton:focus{
+     background-color: #3623B7;
+   }
+   #srch{
+     border-radius: 0px;
+     background-color: #3623B7;
+     width: 250px;
+     height: 40px;
+     border-width: 0px;
+     color: azure;
+     text-align: center;
+     border-radius: 20px;
+
+   }
+   ::placeholder{
+     color: white;
+   }

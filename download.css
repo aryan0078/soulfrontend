@@ -1,0 +1,100 @@
+
+#card{
+    width: 30%;
+    height: 50%;
+    align-self: center;
+   border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+html, body {
+    height: 100%;
+    align-items: center;
+  }
+  
+  #mainbody{
+      display: flex;
+      justify-content: center;
+    height: 100%;
+    
+  }
+  @media (min-width:1024px){
+  body{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #livecounter{
+    align-self: flex-end;
+    margin-top: 145px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+       position: absolute;
+       background-color: white;
+       padding: 5px 5px 5px;
+       
+     }
+}
+  @media (max-width:780px)  { 
+    #card{
+      width: 80%;
+    height: 40%;
+    align-self: center;
+   
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+    flex-direction: column;
+    
+    }
+    body{
+      
+     
+      background-color: #3623B7;
+    }
+    #livecounter{
+      align-self: flex-end;
+      margin-top: 150px;
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 10px;
+         position: absolute;
+         background-color: #3623B7;
+         padding: 5px 5px 5px;
+        color: white; 
+       }
+   
+   }
+   #downloadbutton{
+     border-width: 0px;
+     border-radius: 25px;
+     width: 30%;
+     height: 40px;
+     background-color: tomato;
+     color: white;
+     margin-top:50px;
+   }
+   #downloadbutton:hover{
+     background-color: violet;
+
+   }
+   #downloadbutton:focus{
+     background-color: #3623B7;
+   }
+   #srch{
+     border-radius: 0px;
+     background-color: #3623B7;
+     width: 250px;
+     height: 40px;
+     border-width: 0px;
+     color: azure;
+     text-align: center;
+     border-radius: 20px;
+
+   }
+   ::placeholder{
+     color: white;
+   }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul</title>
+    <link rel="stylesheet" href="index.css" >
+   <script>
+       async function getusers(){
+      var res= await fetch("https://aryandev.pythonanywhere.com/counter")
+     var data=await res.json()
+     console.log(data)
+      document.getElementById('livecounter').innerText=data['user']
+    }
+    async function getdata(){
+        var song=document.getElementById('srch').value
+        var res= await fetch("https://aryandev.pythonanywhere.com/"+song)
+       var data=await res.json()
+       console.log(data)
+       window.url =await data['downloadurl']
+       var title=data['title']
+       //console.log(im)
+       document.getElementById('details').innerHTML='<lable id="titleofsong">'+title+'</lable><br/> <button id="songdownload" onclick=download()>Download/Play</button>'
+       // document.getElementsByClassName('d').src=im
+      }
+      async function download(){
+          window.open(window.url)
+      }
+
+
+   </script>
+</head>
+<body onload=getusers()>
+    <div id="mainbody">
+<div id="card">
+<div id="searchbar">
+    <input id="srch" placeholder="Type your Song here"/>
+</div>
+<div id="details">
+    
+</div>
+
+<button id="downloadbutton" onclick=getdata()>Download</button>
+<div id="livecounter">
+   
+
+</div>
+</div>
+
+    </div>
+    
+</body>
+</html>
